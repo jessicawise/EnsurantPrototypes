@@ -1,3 +1,17 @@
-var component = require('./component');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
-document.body.appendChild(component());
+import Home from './home.js';
+
+// DO NOT ReMOVE
+require('bootstrap-webpack!./bootstrap.config.js');
+
+// add CSS in order of load, same as in index.html
+require('./css/main.css');
+
+
+injectTapEventPlugin();
+
+
+ReactDOM.render(<Home />, document.getElementById('app'));

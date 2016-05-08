@@ -1,6 +1,7 @@
 const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
+const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 
 const TARGET = process.env.npm_lifecycle_event;
 const PATHS = {
@@ -15,30 +16,51 @@ const common = {
   entry: {
     app: PATHS.app
   },
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css'],
+    modulesDirectories: ['node_modules']
+  },
   output: {
     path: PATHS.build,
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
-      {
+    loaders: [{
         // Test expects a RegExp! Note the slashes!
         test: /\.css$/,
         loaders: ['style', 'css'],
         // Include accepts either a path or an array of paths.
         include: PATHS.app
-      }
+      },
+      // Set up jsx. This accepts js too thanks to RegExp
+      {
+        test: /\.jsx?$/,
+        loader: 'babel',
+        query: {
+          cacheDirectory: true,
+          presets: ['react', 'es2015']
+        },
+        exclude: [nodeModulesPath],
+        include: PATHS.app
+      },
+      { test: /bootstrap\/js\//, loader: 'imports?jQuery=jquery' },
+      { test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
+      { test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,   loader: "url?limit=10000&minetype=application/font-woff" },
+      { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=application/octet-stream" },
+      { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,    loader: "file" },
+      { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,    loader: "url?limit=10000&minetype=image/svg+xml" }
+
     ]
   }
 };
 
 // Default configuration. We will return this if
 // Webpack is called outside of npm.
-if(TARGET === 'start' || !TARGET) {
+if (TARGET === 'start' || !TARGET) {
   module.exports = merge(common, {
     watchOptions: {
-     poll: true
-   },
+      poll: true
+    },
     devServer: {
       contentBase: PATHS.build,
 
@@ -69,6 +91,6 @@ if(TARGET === 'start' || !TARGET) {
   });
 }
 
-if(TARGET === 'build') {
+if (TARGET === 'build') {
   module.exports = merge(common, {});
 }
