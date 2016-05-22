@@ -9,6 +9,7 @@ require('bootstrap-webpack!./bootstrap.config.js');
 
 // add CSS in order of load, same as in index.html
 require('./css/main.css');
+require('./css/animate.min.css');
 
 
 injectTapEventPlugin();

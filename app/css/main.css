@@ -6,7 +6,10 @@ html, body {
 }
 
 .cover-img {
-  background-size: cover;
+    background-size: 1920px 1080px;
+
+
+
 }
 
 .navbar-ensurant {
@@ -14,7 +17,7 @@ html, body {
 }
 
 .full-height {
-  height: 100%;
+  height: 100%
 }
 
 .logo {
@@ -24,7 +27,33 @@ html, body {
 }
 
 .content {
-  background-color: blue;
+  background-color: #27233A;
   height: 100%;
   margin-top: 51px;
+}
+
+.homeText {
+  margin-top: 6em;
+  margin-left: 9em;
+  font-weight: 600;
+  font-size: 4em;
+  color: #89DAFF;
+  position: absolute;
+}
+
+.House {
+  display: inline-block;
+  margin: 19em 0em 0em 76em;
+  position: absolute;
+}
+
+.Heart {
+  display: inline-block;
+  margin: 23.5em 0em 0em 76.9em;
+  position: absolute;
+
+}
+
+.Hide {
+  display: none;
 }

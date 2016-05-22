@@ -5,12 +5,14 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      pictureIndex: 0
+      pictureIndex: null,
+      showHomeAnimated: true
     };
   }
 
   setPictureIndex(x) {
-    this.setState({pictureIndex: x})
+    this.setState({pictureIndex: x,
+    showHomeAnimated: false})
   }
 
   render() {
@@ -36,6 +38,7 @@ export default class Home extends React.Component {
                     <span className="caret"></span>
                   </a>
                   <ul className="dropdown-menu">
+
                     <li>
                       <a href="#" onClick={() => this.setPictureIndex(0)}>Mission Statement</a>
                     </li>
@@ -57,26 +60,31 @@ export default class Home extends React.Component {
             </div>
           </div>
         </nav>
+        <div className="container-fluid full-height">
+          <div style={divStyle} className="row content cover-img">
+            <div className="col-xs-12 col-md-12">
 
-        <div style={divStyle} className="row content cover-img">
-          <div className="col-xs-12 col-md-12">
+              <div className={this.state.showHomeAnimated ? "animated fadeIn" : "Hide"}>
+                <h3 className="homeText">Home + Insurance =</h3>
+                <img className="House" src="./img/House.png"/><img className="Heart animated infinite pulse" src="./img/Heart.png"/>
+              </div>
 
-
-            <div id="one" style={{
-              "display": this.state.pictureIndex == 0
-                ? "block"
-                : "none"
-            }}>Statement</div>
-            <div id="two" style={{
-              "display": this.state.pictureIndex == 1
-                ? "block"
-                : "none"
-            }}>We can help</div>
-            <div id="two" style={{
-              "display": this.state.pictureIndex == 2
-                ? "block"
-                : "none"
-            }}>The peeps</div>
+              <div style={{
+                "display": this.state.pictureIndex == 0
+                  ? "block"
+                  : "none"
+              }}>Statement</div>
+              <div style={{
+                "display": this.state.pictureIndex == 1
+                  ? "block"
+                  : "none"
+              }}>We can help</div>
+              <div style={{
+                "display": this.state.pictureIndex == 2
+                  ? "block"
+                  : "none"
+              }}>The peeps</div>
+            </div>
           </div>
         </div>
       </div>
