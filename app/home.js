@@ -75,7 +75,7 @@ export default class Home extends React.Component {
                   <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us
                     <span className="caret"></span>
                   </a>
-                  <ul className="dropdown-menu">
+                  <ul className="dropdown-menu nav-index">
 
                     <li>
                       <a href="#" onClick={() => this.setPictureIndex(0)}>Mission Statement</a>
@@ -118,9 +118,12 @@ export default class Home extends React.Component {
                 "display": this.state.pictureIndex == 1
                   ? "block"
                   : "none"
-              }}><div className="houseText animated fadeIn">
+              }}>
+              <nav className="navbar navbar-fixed-top navbar-help animated fadeInDown">
                 Hover over the images for more information!
-                </div>
+              </nav>
+
+
                 <img className="houseImg" src="./img/HouseImg.png"/>
 
 
