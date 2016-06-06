@@ -7,9 +7,14 @@ html, body {
 
 .cover-img {
     background-size: 1920px 1080px;
+}
 
+.insideDiv {
+  height: 100%;
+}
 
-
+.inheritHeight {
+  height: inherit;
 }
 
 .navbar-ensurant {
@@ -127,4 +132,24 @@ html, body {
   z-index: 2;
   font-size: 2em;
   text-shadow: .5px .5px darkgray;
+}
+
+.statementDiv {
+  width: 41%;
+}
+
+.div-setup {
+  background-color: white;
+  opacity: .8;
+  color: black;
+  height: 91%;
+  margin-top: 15px;
+}
+
+.left-div {
+  width: 33%;
+  margin-left: 12px;
+}
+.right-div {
+  width: 32.5%;
 }

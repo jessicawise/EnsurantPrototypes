@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-
-import Home from './home.js';
+import { Router, Route, hashHistory } from 'react-router'
+import App from './app.js';
 
 // DO NOT ReMOVE
 require('bootstrap-webpack!./bootstrap.config.js');
@@ -15,4 +15,9 @@ require('./css/animate.min.css');
 injectTapEventPlugin();
 
 
-ReactDOM.render(<Home />, document.getElementById('app'));
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App}/>
+    <Route path="/contactus" component={App}/>
+  </Router>
+), document.getElementById('app'));
