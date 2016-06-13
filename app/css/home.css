@@ -1,0 +1,26 @@
+.content {
+  background-color: #27233A;
+  margin-top: 51px;
+}
+
+.homeText {
+  margin-top: 6em;
+  margin-left: 9em;
+  font-weight: 600;
+  font-size: 4em;
+  color: #89DAFF;
+  position: absolute;
+}
+
+.House {
+  display: inline-block;
+  margin: 19em 0em 0em 76em;
+  position: absolute;
+}
+
+.Heart {
+  display: inline-block;
+  margin: 23.5em 0em 0em 76.9em;
+  position: absolute;
+
+}

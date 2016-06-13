@@ -1,6 +1,7 @@
 import React from 'react';
+import {Tooltip, OverlayTrigger, Button} from 'react-bootstrap';
 
-export default class MissionPage extends React.Component {
+export default class HelpPage extends React.Component {
   render() {
     const tooltip = (
       <Tooltip>
