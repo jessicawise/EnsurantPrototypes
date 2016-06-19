@@ -1,3 +1,8 @@
+.help-page{
+  background: url('/img/imgfour.jpg') no-repeat;
+  background-size: cover;
+}
+
 .drawing {
   display: inline-block;
   position: absolute;
@@ -14,28 +19,28 @@
 .houseImg {
   display: inline-block;
   position: absolute;
-  margin: 23em 0em 0em 44em;
+  margin: 28em 0em 0em 40em;
 
 }
 
 .drawOne {
-  margin: 30em 0em 0em 20em;
+  margin: 32em 0em 0em 20em;
 }
 
 .drawTwo {
-  margin: 23em 0em 0em 82em;
+  margin: 30em 0em 0em 78em;
 }
 
 .drawThree {
-  margin: 8em 0em 0em 50em;
+  margin: 12em 0em 0em 53em;
 }
 
 .drawFour {
-  margin: 10em 0em 0em 70em;
+  margin: 13em 0em 0em 70em;
 }
 
 .drawFive {
-  margin: 10em 0em 0em 26em;
+  margin: 12em 0em 0em 30em;
 }
 
 .tooltip-inner {

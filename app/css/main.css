@@ -22,11 +22,15 @@ html, body {
 }
 
 .full-height {
-  height: 100%
+  height: 100%;
 }
 
 .logo {
   width: 67%;
   margin-top: -15px;
   margin-left: -25px;
+}
+
+.container-fluid {
+  padding: 0px;
 }

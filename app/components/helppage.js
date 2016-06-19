@@ -47,8 +47,7 @@ export default class HelpPage extends React.Component {
     );
 
     return (
-      <div>
-        <div className="help-page">
+        <div className="help-page inheritHeight">
           <nav className="navbar navbar-fixed-top navbar-help animated fadeInDown">
             Hover over the images for more information!
           </nav>
@@ -75,7 +74,6 @@ export default class HelpPage extends React.Component {
             <img className="drawing drawFive" src="./img/HouseImgSix.png"/>
           </OverlayTrigger>
         </div>
-          </div>
     )
   }
 }

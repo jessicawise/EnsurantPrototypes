@@ -1,8 +1,11 @@
-
+.team-page {
+  background: url('/img/imgthree.jpg') no-repeat;
+  background-size: cover;
+}
 .left-div {
   width: 33%;
-  margin-left: 12px;
+  margin-left: 28px;
 }
 .right-div {
-  width: 32.5%;
+  width: 30.8%;
 }

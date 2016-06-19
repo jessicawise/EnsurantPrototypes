@@ -3,7 +3,6 @@ import React from 'react';
 export default class MissionPage extends React.Component {
   render() {
     return (
-      <div>
         <div className="inheritHeight mission">
           <div className="row inheritHeight">
             <div className="col-md-5 col-md-offset-7 inheritHeight statementDiv div-setup">
@@ -16,7 +15,7 @@ export default class MissionPage extends React.Component {
             </div>
           </div>
         </div>
-      </div>
+      
     )
   }
   }
