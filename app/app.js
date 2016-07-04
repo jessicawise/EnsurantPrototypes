@@ -35,7 +35,7 @@ export default class App extends React.Component {
                 </ul>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <Link to = "/contact">Contact Us</Link>
               </li>
               <li>
                 <a href="#">Login</a>

@@ -1,0 +1,22 @@
+.contact-div {
+  background: AntiqueWhite;
+}
+
+.form-div {
+  margin-top: 13%;
+  margin-left: 25%;
+  border-right: thick solid #ff0000;
+}
+
+.information-div {
+  margin-top: 13%;
+  margin-left: 5%;
+}
+
+.label-position {
+  display: inline-block;
+}
+
+.input-position {
+  display: block;
+}
