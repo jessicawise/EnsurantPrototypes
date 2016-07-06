@@ -35,6 +35,7 @@ module.exports = {
     "tables": true,
     "forms": true,
     "buttons": true,
+    "cards": true,
 
     "component-animations": true,
     "glyphicons": true,

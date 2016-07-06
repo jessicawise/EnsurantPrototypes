@@ -2,9 +2,33 @@ import React from 'react';
 import RaisedButton from 'material-ui/lib/raised-button';
 import HomePage from './components/homepage.js';
 import { Link } from 'react-router';
+import Dialog from 'material-ui/lib/dialog';
+import LoginModal from './components/loginmodal.js';
 
 export default class App extends React.Component {
+
+  constructor () {
+    super()
+    this.state = {openLogin : false}
+  }
+
+  openLoginModal () {
+    this.setState({openLogin : true})
+  }
+
+  closeLoginModal () {
+    this.setState({openLogin : false})
+  }
+
   render(){
+    const actions = [
+      <RaisedButton
+        label="Ok"
+        primary={true}
+        keyboardFocused={true}
+        onClick={this.closeLoginModal.bind(this)}
+      />,
+    ];
 
   return (
     <div className="full-height">
@@ -38,7 +62,7 @@ export default class App extends React.Component {
                 <Link to = "/contact">Contact Us</Link>
               </li>
               <li>
-                <a href="#">Login</a>
+                <a onClick={() => this.openLoginModal()}>Login</a>
               </li>
             </ul>
           </div>
@@ -47,6 +71,18 @@ export default class App extends React.Component {
       <div className="container-fluid full-height">
         {this.props.children || <HomePage></HomePage>}
       </div>
+
+        <Dialog
+          title="Dialog With Date Picker"
+          actions={actions}
+          modal={false}
+          open={this.state.openLogin}
+          onRequestClose={this.closeLoginModal.bind(this)}
+        >
+          <LoginModal />
+
+        </Dialog>
+
     </div>
   )
 }
