@@ -1,5 +1,5 @@
 .content {
-  background-color: #27233A;
+  background-color: #242F40;
   margin-top: 51px;
 }
 
@@ -23,4 +23,17 @@
   margin: 23.5em 0em 0em 76.9em;
   position: absolute;
 
+}
+
+.home-button {
+  margin-top: 25%;
+  margin-left: 39.2%;
+  border: none;
+  font-weight: bold;
+  width: 200px;
+  background-color: #449d44;
+}
+
+.home-button:hover {
+  background-color: #447844;
 }

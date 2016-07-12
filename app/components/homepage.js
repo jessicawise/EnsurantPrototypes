@@ -9,7 +9,8 @@ export default class HomePage extends React.Component {
             <div className="animated fadeIn">
               <h3 className="homeText">Home + Insurance =</h3>
               <img className="House" src="./img/House.png"/><img className="Heart animated infinite pulse" src="./img/Heart.png"/>
-            </div>
+              <button type="button" className="btn btn-lg btn-success home-button">Learn More Now!</button>
+          </div>
           </div>
         </div>
     )

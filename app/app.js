@@ -42,7 +42,8 @@ export default class App extends React.Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
               <li className="dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us
+                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  ABOUT US
                   <span className="caret"></span>
                 </a>
                 <ul className="dropdown-menu nav-index">
@@ -59,10 +60,10 @@ export default class App extends React.Component {
                 </ul>
               </li>
               <li>
-                <Link to = "/contact">Contact Us</Link>
+                <Link to = "/contact">CONTACT US</Link>
               </li>
               <li>
-                <a onClick={() => this.openLoginModal()}>Login</a>
+                <a onClick={() => this.openLoginModal()}>LOGIN</a>
               </li>
             </ul>
           </div>
