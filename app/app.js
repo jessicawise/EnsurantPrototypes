@@ -41,23 +41,8 @@ export default class App extends React.Component {
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav navbar-right">
-              <li className="dropdown">
-                <a href="#" className="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  ABOUT US
-                  <span className="caret"></span>
-                </a>
-                <ul className="dropdown-menu nav-index">
-
-                  <li>
-                    <Link to = "/mission">Mission Statement</Link>
-                  </li>
-                  <li>
-                    <Link to = "/help">How We Can Help</Link>
-                  </li>
-                  <li>
-                    <Link to = "/team">The Team</Link>
-                  </li>
-                </ul>
+              <li>
+                <Link to = "/about">ABOUT US</Link>
               </li>
               <li>
                 <Link to = "/contact">CONTACT US</Link>
