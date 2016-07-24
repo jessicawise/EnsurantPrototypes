@@ -1,15 +1,55 @@
 .mission-div {
-  background-color: white;
+  width: 30%;
   margin-top: 40px;
-  margin-left: 250px;
+  margin-left: 321px;
+  background-color: #5C6B73;
+  box-shadow: 7px 6px 21px -2px rgba(21,26,46,0.68);
 }
 
 .team-div {
-  background-color: white;
+  width: 30%;
   margin-top: 40px;
-  margin-left: 90px;
+  margin-left: 100px;
+  background-color: #5C6B73;
+  box-shadow: 7px 6px 21px -2px rgba(21,26,46,0.68);
 }
 
 .div-height {
   height: 750px;
+}
+
+.inside-div {
+  margin-top: -51px;
+  text-align: left;
+  margin-left: -55px;
+  font-size: 3em;
+  width: 60%;
+  color: white;
+}
+
+.inside-div:hover {
+  color: #89DAFF;
+}
+
+.info-div {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: -35px;
+  font-size: 1.1em;
+  color: white;
+}
+
+.letter {
+  font-size: 1.8em;
+  font-family: fantasy;
+}
+
+.info-image {
+  max-width: 100px;
+  margin-left: 180px;
+}
+
+.info-house {
+  max-width: 70px;
+  margin-left: 185px;
 }
