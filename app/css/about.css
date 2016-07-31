@@ -53,3 +53,25 @@
   max-width: 70px;
   margin-left: 185px;
 }
+
+.profile-div {
+  margin-left: -50px;
+  margin-top: 40px;
+  width: 550px;
+}
+
+.profile-div figure {
+  display: inline-block;
+}
+
+.profile-div figcaption {
+  color: white;
+  margin: 3px 0px 10px -30px;
+  line-height: 1.1em;
+  text-align:center;
+}
+
+.profile {
+  max-width: 80%;
+  border-radius: 10px;
+}

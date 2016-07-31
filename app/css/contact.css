@@ -2,10 +2,16 @@
   background: AntiqueWhite;
 }
 
+.form-background {
+  margin-top: 150px;
+  margin-left: 450px;
+  box-shadow: 7px 6px 21px -2px rgba(21,26,46,0.68);
+  background: white;
+}
+
 .form-div {
-  margin-top: 13%;
-  margin-left: 25%;
-  border-right: thick solid #ff0000;
+  width: 50%;
+  border-right: 2px solid black;
 }
 
 .information-div {
@@ -19,4 +25,14 @@
 
 .input-position {
   display: block;
+}
+
+.required {
+  color: red;
+}
+
+.contact-text {
+  text-align: center;
+  margin-top: -25px;
+  margin-bottom: 20px;
 }

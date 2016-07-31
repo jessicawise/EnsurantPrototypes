@@ -43,6 +43,120 @@ export default class AboutPage extends React.Component {
             <div className="col-md-4 inside-div">
                 Our Team
               </div>
+              <div className="col-md-12 profile-div">
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+                  <figure><img className="profile" src="/img/placeholder.png" />
+                    <figcaption>
+                      <b>Name</b>
+                      <br/>
+                      <i>Job Title</i>
+                    </figcaption>
+                  </figure>
+              </div>
             </div>
           </div>
         </div>
