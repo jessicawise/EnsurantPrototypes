@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default class Contact extends React.Component {
   render() {
     return (
@@ -44,8 +43,31 @@ export default class Contact extends React.Component {
             </form>
           </div>
 
-          <div className="col-md-3 information-div map">
-            Stuff goes here
+          <div className="col-md-3 information-div">
+            <div className="row contact-info">
+              <div className="col-md-12">
+              <div className="call-info">
+                <b>Call Us</b>
+                <br />
+                (999)999-9999
+              </div>
+              <div className="email-info">
+                <b>Email Us</b>
+                <br />
+                ensurant@ensurant.com
+              </div>
+            </div>
+            </div>
+            <div className="row map">
+
+                <b>Stop By</b>
+                <br/>
+                999 Ensurant Drive
+                <br/>
+                Ensurant, MA 00001
+              <div className="map-image"><img className="google-map" src="/img/map.png"/>
+              </div>
+            </div>
           </div>
         </div>
       </div>

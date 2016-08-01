@@ -59,7 +59,7 @@ export default class App extends React.Component {
       </div>
 
         <Dialog
-          title="Dialog With Date Picker"
+          title="Login"
           actions={actions}
           modal={false}
           open={this.state.openLogin}

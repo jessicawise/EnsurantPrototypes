@@ -1,5 +1,5 @@
 .contact-div {
-  background: AntiqueWhite;
+  background: #ADBBC2;
 }
 
 .form-background {
@@ -35,4 +35,32 @@
   text-align: center;
   margin-top: -25px;
   margin-bottom: 20px;
+}
+
+.map {
+  width: 500px;
+  margin-top: 70px;
+  font-size: 1.2em;
+}
+
+.google-map {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.map-image {
+  margin-left: 170px;
+  margin-top: -75px;
+}
+
+.contact-info {
+  font-size: 1.2em;
+  width: 500px;
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+.email-info {
+  margin-left: 134px;
+  margin-top: -48px;
 }
