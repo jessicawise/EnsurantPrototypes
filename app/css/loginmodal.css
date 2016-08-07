@@ -1,0 +1,14 @@
+.modal-body-left {
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+.modal-body-right {
+  text-align: center;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.mui-ripple-circle {display: none}

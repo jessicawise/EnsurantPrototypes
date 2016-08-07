@@ -15,7 +15,8 @@ require('./css/main.css');
 require('./css/animate.min.css');
 require('./css/home.css');
 require('./css/about.css');
-require('./css/contact.css')
+require('./css/contact.css');
+require('./css/loginmodal.css')
 
 
 injectTapEventPlugin();

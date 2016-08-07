@@ -23,9 +23,10 @@ export default class App extends React.Component {
   render(){
     const actions = [
       <RaisedButton
-        label="Ok"
+        backgroundColor="white"
+        label="Close"
+        labelColor="black"
         primary={true}
-        keyboardFocused={true}
         onClick={this.closeLoginModal.bind(this)}
       />,
     ];
